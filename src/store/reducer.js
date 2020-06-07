@@ -7,7 +7,7 @@ function changeTest(state='test',action=test()){
         default: return state
     }
 }
-function changeLogin(state=true,action=logout()){
+function changeLogin(state=false,action=logout()){
     switch(action.type){
         case actions.LOGIN: return true
         case actions.LOGOUT: return false
